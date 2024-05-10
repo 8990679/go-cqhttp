@@ -25,10 +25,10 @@ services:
         timeout: 60
         codeUri: ./
         diskSize: 512
-        caPort: 5700
+        caPort: 5244
         customRuntimeConfig:
           command:
-            - python3
+            - ./alist start
           args:
             - app.py
       triggers:
